@@ -23,6 +23,7 @@ import Jimp from "jimp";
           resolve(outpath);
         });
     } catch (error) {
+        console.error('Error processing image:', error.message);
       reject(error);
     }
   });
